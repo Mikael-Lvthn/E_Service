@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background - Urbiztondo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('bgpeoples.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 2rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .content-container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1s ease forwards;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .content-container img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      flex: 1 1 350px;
+      object-fit: cover;
+    }
+
+    .text-content {
+      flex: 2 1 500px;
+    }
+
+    .text-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ffeb3b;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+
+    .text-content p {
+      font-size: 1.05rem;
+      color: #eee;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .back-home {
+      display: block;
+      text-align: center;
+      margin: 3rem auto 1rem;
+      padding: 0.75rem 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home:hover {
+      background-color: #0044cc;
+    }
+
+    footer {
+      background-color: #002244;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    footer .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    footer img {
+      height: 100px;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .content-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-content {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Historical Background of Urbiztondo</h1>
+  </header>
+
+<div class="content-container">
+  <img src="general.jpg" alt="General Antonio Urbiztondo">
+  <div class="text-content">
+    <h2>A Brief History of Urbiztondo</h2>
+    <p>The municipality was named after <strong>General Juan Antonio de Urbiztondo y Eguía</strong>, the Spanish Governor-General of the Philippines from 1850 to 1853, who was also known as the conqueror of the Muslims in Jolo. He then issued a decree founding the town and consequently the newly formed town was named “Urbiztondo” in his honor.</p>
+    <p>The town's establishment can be attributed to <strong>Fr. Ramon Dalmau</strong>, the parish priest of San Carlos (Binalatongan), who in 1852 began the process for its separation from San Carlos. While the area remained a <em>visita</em> of San Carlos for that year, the town of Urbiztondo was finally established as a separate entity on <strong>November 28, 1853</strong>, when it was assigned its own curate (parish priest).</p>
+    <p>The <strong>Dominicans</strong> accepted Urbiztondo as a vicariate in 1855 and assigned <strong>Rev. Father Francisco Treserra</strong> to the town; he is also responsible for relocating the town to the place where it is now located.</p>
+  </div>
+</div>
+
+
+  <a href="home.html" class="back-home">← Back to Home</a>
+
+  <footer>
+    <div class="footer-content">
+      <img src="logo.png" alt="Urbiztondo Logo" />
+      <div style="text-align: center;">
+        <h3 style="margin: 0; font-size: 1.5rem;">Bayan ng Urbiztondo</h3>
+        <p style="margin: 5px 0;">Pangasinan, Philippines</p>
+        <p style="margin: 5px 0; font-weight: bold; font-size: 1.2rem;">
+          📞 (075) 555-1234 | 📧 contact@urbiztondo.gov.ph
+        </p>
+      </div>
+      <img src="Seal_of_the_Province_of_Pangasinan.svg.png" alt="Pangasinan Logo" />
+    </div>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #ccc;">
+      © 2025 Municipality of Urbiztondo. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
